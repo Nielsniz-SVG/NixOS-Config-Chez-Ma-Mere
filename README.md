@@ -2,57 +2,47 @@
 
 Configuration NixOS personnelle basée sur Nix flakes + Home Manager.
 
-## Objectif
+## Installation dans une machine virtuelle
 
-Reproduire l'environnement de bureau avec :
+Depuis une installation NixOS fraîche :
 
-- MangoWC
-- DankMaterialShell (DMS)
-- Catppuccin Mocha
-- Zsh
-- Kitty
-- Yazi
-- Neovim
-- Fastfetch
-- Zen Browser
-- VSCodium
-- Spicetify
-- FossaCursors
-
-## Structure
-
-```
-.
-├── install.sh
-├── nixos/
-│   ├── flake.nix
-│   ├── configuration.nix
-│   ├── home.nix
-│   └── hardware-configuration.nix   # généré sur la machine
-└── config/
-    ├── DankMaterialShell/
-    ├── fastfetch/
-    ├── kitty/
-    ├── yazi/
-    ├── zen/
-    └── zsh/
-```
-
-## Installation
-
-Depuis une installation NixOS :
+### 1. Cloner le dépôt
 
 ```bash
 git clone https://github.com/Nielsniz-SVG/NixOS-Config-Chez-Ma-Mere.git
 cd NixOS-Config-Chez-Ma-Mere
+```
+
+### 2. Générer la configuration matérielle de la VM
+
+```bash
+sudo nixos-generate-config
+sudo cp /etc/nixos/hardware-configuration.nix nixos/hardware-configuration.nix
+```
+
+Le fichier `hardware-configuration.nix` est spécifique à chaque machine et n'est pas versionné.
+
+### 3. Vérifier le Flake
+
+```bash
+cd nixos
+nix flake check
+cd ..
+```
+
+### 4. Installer la configuration
+
+```bash
 chmod +x install.sh
 ./install.sh
 ```
 
-Le script prépare la configuration matérielle locale puis lance la configuration NixOS du dépôt.
+Le script applique ensuite la configuration NixOS du dépôt.
 
-> Les fichiers contenant des données privées ou propres à une machine (cookies, mots de passe, bases de données du profil Zen, etc.) ne sont pas versionnés.
+> Le dépôt est encore en construction : certains fichiers binaires et certaines configurations applicatives doivent encore être importés avant de considérer l'installation comme une copie complète.
 
-## État
+## Objectif
 
-Le dépôt est construit progressivement à partir de la configuration actuelle. Les fichiers binaires et certaines configurations applicatives doivent encore être importés depuis la machine d'origine avant de considérer l'installation comme une copie complète.
+Reproduire l'environnement avec MangoWC, DankMaterialShell, Catppuccin Mocha, Zsh, Kitty, Yazi, Neovim, Fastfetch, Zen Browser, VSCodium, Spicetify et FossaCursors.
+
+> Les données privées d'un profil (cookies, mots de passe, bases de données Zen, etc.) ne sont pas versionnées.
