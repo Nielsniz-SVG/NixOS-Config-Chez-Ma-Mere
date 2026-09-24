@@ -1,0 +1,68 @@
+[flavor]
+dark = "catppuccin-mocha-blue"
+light = "catppuccin-mocha-blue"
+
+[manager]
+cwd = { fg = "#89b4fa" }
+hovered = { fg = "#1e1e2e", bg = "#89b4fa" }
+preview_hovered = { underline = true }
+find_keyword = { fg = "#f9e2af", italic = true }
+find_position = { fg = "#cba6f7", bg = "reset", italic = true }
+marker_selected = { fg = "#f9e2af", bg = "#f9e2af" }
+marker_copied = { fg = "#a6e3a1", bg = "#a6e3a1" }
+marker_cut = { fg = "#f38ba8", bg = "#f38ba8" }
+tab_active = { fg = "#1e1e2e", bg = "#cba6f7" }
+tab_inactive = { fg = "#cdd6f4", bg = "#313244" }
+tab_width = 1
+count_copied = { fg = "#1e1e2e", bg = "#a6e3a1" }
+count_cut = { fg = "#1e1e2e", bg = "#f38ba8" }
+count_selected = { fg = "#1e1e2e", bg = "#f9e2af" }
+
+[status]
+separator_open = ""
+separator_close = ""
+separator_style = { fg = "#313244", bg = "#313244" }
+mode_normal = { fg = "#1e1e2e", bg = "#89b4fa", bold = true }
+mode_select = { fg = "#1e1e2e", bg = "#a6e3a1", bold = true }
+mode_unset = { fg = "#1e1e2e", bg = "#f38ba8", bold = true }
+progress_label = { fg = "#cdd6f4", bold = true }
+progress_normal = { fg = "#89b4fa", bg = "#313244" }
+progress_error = { fg = "#f38ba8", bg = "#313244" }
+
+[select]
+border = { fg = "#89b4fa" }
+active = { fg = "#cba6f7", bold = true }
+inactive = { fg = "#cdd6f4" }
+
+[input]
+border = { fg = "#89b4fa" }
+title = {}
+value = {}
+selected = { reversed = true }
+
+[completion]
+border = { fg = "#89b4fa" }
+active = { fg = "#cba6f7", bg = "#313244" }
+inactive = {}
+icon_folder = ""
+icon_file = ""
+
+[tasks]
+border = { fg = "#89b4fa" }
+title = {}
+hovered = { underline = true }
+
+[which]
+mask = { bg = "#181825" }
+cand = { fg = "#89b4fa" }
+rest = { fg = "#585b70" }
+desc = { fg = "#a6adc8" }
+separator = "  "
+separator_style = { fg = "#585b70" }
+
+[help]
+on = { fg = "#89b4fa" }
+run = { fg = "#cba6f7" }
+desc = { fg = "#a6adc8" }
+hovered = { reversed = true }
+footer = { fg = "#cdd6f4", bg = "#313244" }
