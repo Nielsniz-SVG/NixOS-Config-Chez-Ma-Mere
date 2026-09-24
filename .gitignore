@@ -1,0 +1,17 @@
+result
+result-*
+.direnv/
+.DS_Store
+
+# Machine-specific NixOS hardware config
+nixos/hardware-configuration.nix
+
+# Private/runtime Zen profile data
+config/zen/profile/
+config/zen/**/cookies.sqlite
+config/zen/**/logins.json
+config/zen/**/key4.db
+config/zen/**/cert9.db
+config/zen/**/places.sqlite
+config/zen/**/storage.sqlite
+config/zen/**/sessionstore-backups/
