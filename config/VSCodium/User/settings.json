@@ -1,0 +1,6 @@
+{
+    "git.enableSmartCommit": true,
+    "git.autofetch": true,
+    "security.workspace.trust.untrustedFiles": "open",
+    "workbench.colorTheme": "Catppuccin Mocha"
+}
