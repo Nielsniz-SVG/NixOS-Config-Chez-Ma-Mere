@@ -1,0 +1,20 @@
+/* DMS Matugen Zen Browser Theme */
+:root {
+  --zen-primary-color: #7a3f69 !important;
+  --toolbarbutton-icon-fill: #f5c2e7 !important;
+  --toolbar-field-color: #cdd6f4 !important;
+  --tab-selected-textcolor: #f5c2e7 !important;
+  --toolbar-color: #cdd6f4 !important;
+  --arrowpanel-color: #cdd6f4 !important;
+  --arrowpanel-background: #1e1e2e !important;
+  --sidebar-text-color: #cdd6f4 !important;
+  --zen-main-browser-background: #1e1e2e !important;
+  --zen-main-browser-background-toolbar: #1e1e2e !important;
+}
+#zen-browser-background { --zen-main-browser-background: #1e1e2e !important; --zen-background-opacity: 1 !important; }
+#zen-toolbar-background { --zen-main-browser-background-toolbar: #1e1e2e !important; --zen-background-opacity: 1 !important; }
+.sidebar-placesTree,#zen-workspaces-button,#TabsToolbar,.urlbar-background,#zen-appcontent-navbar-container { background-color: #1e1e2e !important; }
+.urlbar-input::selection { color: #1e1e2e !important; background-color: #f5c2e7 !important; }
+.urlbarView-url { color: #a6adc8 !important; }
+toolbar .toolbarbutton-1 > .toolbarbutton-icon { fill: #f5c2e7 !important; }
+#PanelUI-menu-button .toolbarbutton-icon,#downloads-button .toolbarbutton-icon,#unified-extensions-button .toolbarbutton-icon { fill: #f5c2e7 !important; color: #f5c2e7 !important; }
