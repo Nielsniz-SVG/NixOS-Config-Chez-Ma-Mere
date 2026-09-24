@@ -1,0 +1,2 @@
+catppuccin.catppuccin-vsc
+jnoortheen.nix-ide
