@@ -1,0 +1,10 @@
+{
+  "wallpaperCarousel": {
+    "enabled": true,
+    "overlayOpacity": 77
+  },
+  "dankKDEConnect": {
+    "enabled": true,
+    "scanSubdirectories": true
+  }
+}
