@@ -30,3 +30,5 @@ sudo nixos-rebuild switch --flake "$NIXOS_DIR#nixos"
 echo
 echo "Configuration appliquée."
 echo "Les configurations applicatives seront synchronisées par les fichiers du dépôt."
+echo "Redémarrage en cours"
+sudo reboot
