@@ -124,6 +124,12 @@
     slurp
     swaybg
     nerd-fonts.jetbrains-mono
+    rustc
+    wev
+    pkgs.brightnessctl
+    lua
+    fragments
+    OVMF
   ];
 
   nixpkgs.config.allowUnfree = true;
