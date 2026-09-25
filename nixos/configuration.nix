@@ -17,7 +17,7 @@
 
   programs.silentSDDM = {
     enable = true;
-    theme = "default";
+    theme = "ken";
   };
 
   services.displayManager.sddm.enable = true;
